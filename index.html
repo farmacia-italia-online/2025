@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <base href="/" />
+    <script>
+    function requestPermission() {
+    			Notification.requestPermission().then(function(permission) {console.log('permiss', permission)});
+    		}
+    </script>
+    
+   
+    <style>
+    .mpest-popup{position:fixed;top:0;left:0;right:0;bottom:0;z-index:999999}body,html{background-color:#000;height:100%;position:relative}.arrow{display:none;animation:slide 1s ease-in-out infinite}@keyframes slide{0%,100%{transform:translate(0,0)}50%{transform:translate(0,10px)}}body{-moz-osx-font-smoothing:grayscale;-moz-user-select:none;-ms-user-select:none;-webkit-font-smoothing:antialiased;-webkit-user-select:none;color:#fff;font:300 16px Helvetica,Arial,sans-serif;margin:0;overflow:hidden;text-align:center;user-select:none;width:100%}.main-content{font-size:28px;position:relative;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.player{width:360px;height:200px;max-width:100%;border-bottom:2px solid rgba(255,255,255,.2);margin:0 auto 50px;background:#000;position:relative}.player:before{content:"";width:10px;height:10px;border-radius:50%;background:#fe0100;position:absolute;left:0;bottom:-6px;cursor:pointer}[class*=icon-]{display:block;width:20px;height:20px;position:absolute;cursor:pointer}.icon-1{top:15px;left:11px}.icon-2{width:25px;height:25px;top:17px;right:100px}.icon-3{top:15px;right:55px}.icon-4{top:15px;right:10px}.icon-5,.icon-7{width:20px;height:20px;top:50%;left:75%;margin:-10px 0 0 -10px}.icon-6{width:0;height:0;top:50%;left:50%;border-top:15px solid transparent;border-bottom:15px solid transparent;border-left:22px solid #fff;margin:-15px 0 0 -7px}.icon-6-1{width:70px;height:70px;display:block;position:absolute;cursor:pointer;top:50%;left:50%;margin-top:-35px;margin-left:-35px;display:none}.icon-5{top:50%;left:25%}.icon-8{right:15px;bottom:13px}.isAndroid .main-content{top:0;height:85%;-webkit-transform:translateY(0);transform:translateY(0)}.isAndroid .msg{position:absolute;left:0;right:0;bottom:0}@media (max-width:560px){.arrow{display:block;position:fixed;right:7%;bottom:25%}.main-content{top:0;transform:unset}.msg{position:fixed;bottom:7%}}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--{{HEAD}}-->
+</head>
+
+<body class="style1 ru">
+	<!--{{BODY}}-->
+    <!-- Анимация загрузки -->
+    <div class="main-content">
+        <div class="player">
+            <img class="icon-1" src="/icon1.png" alt="">
+            <img class="icon-2" src="/icon2.png" alt="">
+            <img class="icon-3" src="/icon3.png" alt="">
+            <img class="icon-4" src="/icon4.png" alt="">
+            <img class="icon-5" src="/icon5.png" alt=""> <span class="icon-6"></span>
+            <img class="icon-7" src="/icon7.png" alt="">
+            <img class="icon-8" src="/icon8.png" alt="">
+        </div>
+        <svg class="arrow" width="92" height="100" viewBox="0 0 92 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 45.5L46 0L91.5 45.5H73V143.5H19V45.5H0.5Z" fill="white" />
+        </svg>
+        <div id="text1" class="msg">
+        </div>
+    </div>
+    <script>
+    var country = navigator.language.substring(0,2) || 'en';
+    		var translation = '';
+    		var box = document.getElementById('text1');
+    				// Объявим переводы строк
+    		switch (country) {
+    			case 'uk': translation = 'Щоб подивитися відео натисніть \"Дозволити\"'; break;
+    			case 'ru': translation = 'Нажмите \"Разрешить\", чтобы посмотреть видео'; break;
+    			case 'de': translation = 'Klicken Sie auf \"Zulassen\", um das Video anzusehen'; break;
+    			case 'cs': translation = 'Video můžete sledovat stisknutím tlačítka \"Povolit\"'; break;
+    			case 'fr': translation = 'Appuyez sur \"Autoriser\" pour regarder la vidéo'; break;
+    			case 'el': translation = 'Πατήστε \"Allow\" για να παρακολουθήσετε το βίντεο'; break;
+    			case 'it': translation = 'Premi \"Consenti\" per guardare il video'; break;
+    			case 'hu': translation = 'Nyomja meg az \"Engedélyezés\" gombot a videó megtekintéséhez'; break;
+    			case 'ar': translation = 'اضغط على \"سماح\" لمشاهدة الفيديو'; break;
+    			case 'nl': translation = 'Druk op \"Toestaan\" om de video te bekijken'; break;
+    			case 'pt': translation = 'Pressione \"Permitir\" para assistir ao vídeo'; break;
+    			case 'es': translation = 'Presiona \"Permitir\" para ver el video'; break;
+    			case 'bg': translation = 'Натиснете \"Разрешаване\", за да гледате видеоклипа'; break;
+    			case 'hr': translation = 'Pritisnite \"Dopusti\" za gledanje videozapisa'; break;
+    			case 'ro': translation = 'Apăsați pe \"Permite\" pentru a viziona videoclipul'; break;
+    			case 'sk': translation = 'Ak chcete video prehrať, stlačte tlačidlo Povoliť'; break;
+    			case 'id': translation = 'Tekan «Izinkan» untuk menonton video'; break;
+    			case 'my': translation = 'Tekan \"Benarkan\" untuk menonton video'; break;
+    			case 'ms': translation = 'Tekan \"Benarkan\" untuk menonton video'; break;
+    			case 'ko': translation = '허용을 눌러 동영상을 봅니다.'; break;
+    			case 'tr': translation = 'Videoyu izlemek için \"İzin ver\" e basın'; break;
+    			case 'lt': translation = 'Paspauskite \"Leisti\", jei norite žiūrėti vaizdo įrašą'; break;
+    			case 'pl': translation = 'Kliknij \"Zezwalaj\", aby obejrzeć wideo'; break;
+    			case 'bn': translation = 'ভিডিও দেখার জন্য \"অনুমতি দিন\" টিপুন'; break;
+    			case 'ja': translation = '「許可」を押して、ビデオを視聴します'; break;
+    			case 'hi': translation = 'वीडियो देखने के लिए \"अनुमति दें"\ दबाएं'; break;
+    			default: translation = 'Press \"Allow\" to watch the video';
+    		};
+    		//Переводим
+    		box.innerHTML = translation;
+    </script>
+</body>
+
+</html>
