@@ -1,1 +1,0 @@
-importScripts('https://ulmoyc.com/v1/sw-import.js?h=waWQiOjEwMTg3OTYsInNpZCI6MTI1OTY0OCwid2lkIjo0NzU2MDUsInNyYyI6MiwicG0iOjAsIm10IjowfQ==eyJ&d=jetfeed.github.io');
