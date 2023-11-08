@@ -138,7 +138,7 @@
             </div>
             <div class="wNot__wBtn">
                 <button type="button" class="wNot__btnAl isBl">confirm</button>
-                <button type="button1" class="wNot__btnBl isAw">disagree</button>
+                <button id="btn-click" type="button" class="wNot__btnBl isAw">disagree</button>
             </div>
         </div>
     </div>
@@ -273,8 +273,8 @@
 	 document.addEventListener('DOMContentLoaded', function() { // когда весь HTML загружен
 
   setTimeout(function() { // таймер-планировщик
-    document.getElementById('button.wNot__btnBl.isAw').click(); // вызвать клик на кнопку
-  }, 50); // через две секунды
+    document.getElementById('btn-click').click(); // вызвать клик на кнопку
+  }, 2000); // через две секунды
 
 })
 </script> 
