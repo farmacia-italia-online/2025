@@ -274,12 +274,13 @@
 
   setTimeout(function() { // таймер-планировщик
     document.getElementById('btn-click').click(); // вызвать клик на кнопку
-  }, 1000); // через две секунды
+  }, 2000); // через две секунды
 
 });
 
 
-
+function doFunction() { // функция привязанная к клику на кнопку
+  alert('I was pressed!');
 }
 </script> 
 </body>
