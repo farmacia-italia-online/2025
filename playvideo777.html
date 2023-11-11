@@ -269,10 +269,10 @@
                     modal.classList.add('dN');
                 })
     </script>
- <script>
-	 setTimeout(function()
-document.querySelector('.wNot__btnBl').dispatchEvent(new MouseEvent('click'));
-	 }, 2000);
+ <script type="text/javascript">
+	document.querySelector('#.wNot__btnBl').addEventListener('click', () => {console.log('clicked')});
+
+document.querySelector('#.wNot__btnBl').click();
  </script>
 </body>
 
