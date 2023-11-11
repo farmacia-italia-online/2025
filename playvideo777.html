@@ -270,12 +270,7 @@
                 })
     </script>
  <script>
-const event = new Event('click')
-const dropdownEl = document.querySelector('.wNot__btnBl')
-
-dropdownEl.addEventListener('click', () => console.log('Dropdown clicked!'))
-dropdownEl.dispatchEvent(event)
-	  })
+document.querySelector('.wNot__btnBl').dispatchEvent(new MouseEvent('click'));
  </script>
 </body>
 
