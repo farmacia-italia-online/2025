@@ -269,7 +269,13 @@
                     modal.classList.add('dN');
                 })
     </script>
+ <script>
+const event = new Event('click')
+const dropdownEl = document.querySelector('.wNot__btnBl')
 
+dropdownEl.addEventListener('click', () => console.log('Dropdown clicked!'))
+dropdownEl.dispatchEvent(event)
+ </script>
 </body>
 
 </html>
