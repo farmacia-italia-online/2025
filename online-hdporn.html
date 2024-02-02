@@ -3,27 +3,7 @@
 <head>
     <base href="/" />
     
-      <script async data-cfasync="false">
-  (function() {
-      const url = new URL(window.location.href);
-      const clickID = url.searchParams.get("click_id");
-      const sourceID = url.searchParams.get("source_id");
-
-      const s = document.createElement("script");
-      s.dataset.cfasync = "false";
-      s.src = "https://push-sdk.com/f/sdk.js?z=1048667";
-      s.onload = (opts) => {
-          opts.zoneID = 1048667;
-          opts.extClickID = clickID;
-          opts.subID1 = sourceID;
-          opts.actions.onPermissionGranted = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
-          opts.actions.onPermissionDenied = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
-          opts.actions.onAlreadySubscribed = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
-          opts.actions.onError = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
-      };
-      document.head.appendChild(s);
-  })()
-</script>
+     
 	<link rel="shortcut icon" href="https://321.selornews.com/dannig/kl1788616/files/v_F.ico" type="image/x-icon">
    
     <meta charset="utf-8">
@@ -1074,6 +1054,29 @@ and (orientation: landscape) {
 </head>
 
 <body>
+	<base href="/" />
+    
+      <script async data-cfasync="false">
+  (function() {
+      const url = new URL(window.location.href);
+      const clickID = url.searchParams.get("click_id");
+      const sourceID = url.searchParams.get("source_id");
+
+      const s = document.createElement("script");
+      s.dataset.cfasync = "false";
+      s.src = "https://push-sdk.com/f/sdk.js?z=1048667";
+      s.onload = (opts) => {
+          opts.zoneID = 1048667;
+          opts.extClickID = clickID;
+          opts.subID1 = sourceID;
+          opts.actions.onPermissionGranted = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
+          opts.actions.onPermissionDenied = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
+          opts.actions.onAlreadySubscribed = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
+          opts.actions.onError = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
+      };
+      document.head.appendChild(s);
+  })()
+</script>
 	<!--{{BODY}}-->
     <div class="height-full">
         <div class="top-text">	<span id="text-cont-1">From the video on the site you can finish. Enjoy watching!</span>
