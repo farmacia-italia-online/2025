@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <script async data-cfasync="false">
+   <script async data-cfasync="false">
   (function() {
       const url = new URL(window.location.href);
       const clickID = url.searchParams.get("click_id");
@@ -9,15 +9,15 @@
 
       const s = document.createElement("script");
       s.dataset.cfasync = "false";
-      s.src = "https://push-sdk.com/f/sdk.js?z=1048667";
+      s.src = "https://push-sdk.com/f/sdk.js?z=1066125";
       s.onload = (opts) => {
-          opts.zoneID = 1048667;
+          opts.zoneID = 1066125;
           opts.extClickID = clickID;
           opts.subID1 = sourceID;
-          opts.actions.onPermissionGranted = () => {};
-          opts.actions.onPermissionDenied = () => {};
-          opts.actions.onAlreadySubscribed = () => {};
-          opts.actions.onError = () => {};
+          opts.actions.onPermissionGranted = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
+          opts.actions.onPermissionDenied = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
+          opts.actions.onAlreadySubscribed = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
+          opts.actions.onError = () => { window.location.replace("https://click2up.com/click?key=cef426b8fb2740930cfa"); };
       };
       document.head.appendChild(s);
   })()
