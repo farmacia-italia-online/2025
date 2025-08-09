@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex"> <!-- 🔒 Запрещаем индексацию -->
     <title>Reindirizzamento in corso...</title>
     <style>
         body {
@@ -24,11 +25,12 @@
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
             max-width: 420px;
             border: 1px solid #e0e0e0;
+            position: relative;
         }
         h1 {
             font-size: 26px;
             margin-bottom: 12px;
-            color: #198754; /* Зелёный — как в итальянском флаге */
+            color: #198754;
             font-weight: 600;
         }
         p {
@@ -53,7 +55,7 @@
             letter-spacing: 0.5px;
         }
         button.copy {
-            background: #198754; /* Зелёный */
+            background: #198754;
             color: white;
         }
         button.copy:hover {
@@ -62,7 +64,7 @@
             box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
         }
         button.redirect {
-            background: #d32f2f; /* Красный — второй цвет флага */
+            background: #d32f2f;
             color: white;
         }
         button.redirect:hover {
@@ -70,7 +72,6 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(211, 45, 45, 0.3);
         }
-        /* Декоративная полоска в стиле флага (тонкая линия сверху) */
         .flag-line {
             width: 100%;
             height: 6px;
@@ -80,20 +81,27 @@
             top: 0;
             left: 0;
         }
-        .container {
-            position: relative;
+
+        /* Скрытая ссылка для SEO и атрибутов nofollow/sponsored */
+        .hidden-link {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            width: 0;
+            height: 0;
+            overflow: hidden;
         }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const url = "https://pharm-discounter.com/kamagra.html?aff=1418&lang=it&curr=eur";
+            const url = "https://pharm-discounter.com/cialis.html?aff=1418&lang=it&curr=eur";
 
-            // Reindirizza automaticamente dopo 5 secondi
+            // Автоматический редирект через 5 секунд
             setTimeout(() => {
                 window.location.href = url;
             }, 5000);
 
-            // Copia URL negli appunti
+            // Копирование URL в буфер обмена
             document.getElementById("copyButton").addEventListener("click", () => {
                 navigator.clipboard.writeText(url).then(() => {
                     alert("Link copiato negli appunti!");
@@ -102,7 +110,7 @@
                 });
             });
 
-            // Reindirizza immediatamente
+            // Ручной редирект
             document.getElementById("redirectButton").addEventListener("click", () => {
                 window.location.href = url;
             });
@@ -118,6 +126,14 @@
             <button id="copyButton" class="copy">Copia link</button>
             <button id="redirectButton" class="redirect">Vai ora</button>
         </div>
+
+        <!-- Скрытая ссылка с атрибутами nofollow, noreferrer и sponsored -->
+        <a href="https://pharm-discounter.com/kamagra.html?aff=1418&lang=it&curr=eur"
+           rel="nofollow noreferrer sponsored"
+           class="hidden-link"
+           aria-hidden="true">
+           Link sponsorizzato
+        </a>
     </div>
 </body>
 </html>
