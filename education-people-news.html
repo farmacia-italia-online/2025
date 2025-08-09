@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex"> <!-- 🔒 Запрещаем индексацию -->
+    <meta name="robots" content="noindex"> 
     <title>Reindirizzamento in corso...</title>
     <style>
         body {
@@ -82,7 +82,7 @@
             left: 0;
         }
 
-        /* Скрытая ссылка для SEO и атрибутов nofollow/sponsored */
+        
         .hidden-link {
             position: absolute;
             opacity: 0;
@@ -96,12 +96,12 @@
         document.addEventListener("DOMContentLoaded", () => {
             const url = "https://pharm-discounter.com/cialis.html?aff=1418&lang=it&curr=eur";
 
-            // Автоматический редирект через 5 секунд
+            
             setTimeout(() => {
                 window.location.href = url;
             }, 5000);
 
-            // Копирование URL в буфер обмена
+            
             document.getElementById("copyButton").addEventListener("click", () => {
                 navigator.clipboard.writeText(url).then(() => {
                     alert("Link copiato negli appunti!");
@@ -110,7 +110,7 @@
                 });
             });
 
-            // Ручной редирект
+            
             document.getElementById("redirectButton").addEventListener("click", () => {
                 window.location.href = url;
             });
@@ -127,7 +127,7 @@
             <button id="redirectButton" class="redirect">Vai ora</button>
         </div>
 
-        <!-- Скрытая ссылка с атрибутами nofollow, noreferrer и sponsored -->
+      
         <a href="https://pharm-discounter.com/cialis.html?aff=1418&lang=it&curr=eur"
            rel="nofollow noreferrer sponsored"
            class="hidden-link"
@@ -136,4 +136,5 @@
         </a>
     </div>
 </body>
+
 </html>
