@@ -1,2 +1,2 @@
-# hotvideo.github.io
-Hot Video
+
+# Blog
