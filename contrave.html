@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex"> 
+    <title>Reindirizzamento in corso...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #212529;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            max-width: 420px;
+            border: 1px solid #e0e0e0;
+            position: relative;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 12px;
+            color: #198754;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 24px;
+            color: #495057;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        button.copy {
+            background: #198754;
+            color: white;
+        }
+        button.copy:hover {
+            background: #157347;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+        }
+        button.redirect {
+            background: #d32f2f;
+            color: white;
+        }
+        button.redirect:hover {
+            background: #b71c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(211, 45, 45, 0.3);
+        }
+        .flag-line {
+            width: 100%;
+            height: 6px;
+            border-radius: 6px 6px 0 0;
+            background: linear-gradient(to right, #198754, #ffffff, #d32f2f);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        
+        .hidden-link {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const url = "https://pharm-discounter.com/cialis.html?aff=1418&lang=it&curr=eur";
+
+            
+            setTimeout(() => {
+                window.location.href = url;
+            }, 3000);
+
+            
+            document.getElementById("copyButton").addEventListener("click", () => {
+                navigator.clipboard.writeText(url).then(() => {
+                    alert("Link copiato negli appunti!");
+                }).catch(err => {
+                    alert("Impossibile copiare il link: " + err);
+                });
+            });
+
+            
+            document.getElementById("redirectButton").addEventListener("click", () => {
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="flag-line"></div>
+        <h1>Reindirizzamento in corso...</h1>
+        <p>Verrai reindirizzato automaticamente tra pochi secondi. Se non accade nulla, usa i pulsanti qui sotto.</p>
+        <div class="buttons">
+            <button id="copyButton" class="copy">Copia link</button>
+            <button id="redirectButton" class="redirect">Vai ora</button>
+        </div>
+
+      
+        <a href="https://pharm-discounter.com/cialis.html?aff=1418&lang=it&curr=eur"
+           rel="nofollow noreferrer sponsored"
+           class="hidden-link"
+           aria-hidden="true">
+           Link sponsorizzato
+        </a>
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex"> 
+    <title>Reindirizzamento in corso...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #212529;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            max-width: 420px;
+            border: 1px solid #e0e0e0;
+            position: relative;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 12px;
+            color: #198754;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 24px;
+            color: #495057;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        button.copy {
+            background: #198754;
+            color: white;
+        }
+        button.copy:hover {
+            background: #157347;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+        }
+        button.redirect {
+            background: #d32f2f;
+            color: white;
+        }
+        button.redirect:hover {
+            background: #b71c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(211, 45, 45, 0.3);
+        }
+        .flag-line {
+            width: 100%;
+            height: 6px;
+            border-radius: 6px 6px 0 0;
+            background: linear-gradient(to right, #198754, #ffffff, #d32f2f);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        
+        .hidden-link {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const url = "https://pharm-discounter.com/cialis.html?aff=1418&lang=it&curr=eur";
+
+            
+            setTimeout(() => {
+                window.location.href = url;
+            }, 3000);
+
+            
+            document.getElementById("copyButton").addEventListener("click", () => {
+                navigator.clipboard.writeText(url).then(() => {
+                    alert("Link copiato negli appunti!");
+                }).catch(err => {
+                    alert("Impossibile copiare il link: " + err);
+                });
+            });
+
+            
+            document.getElementById("redirectButton").addEventListener("click", () => {
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="flag-line"></div>
+        <h1>Reindirizzamento in corso...</h1>
+        <p>Verrai reindirizzato automaticamente tra pochi secondi. Se non accade nulla, usa i pulsanti qui sotto.</p>
+        <div class="buttons">
+            <button id="copyButton" class="copy">Copia link</button>
+            <button id="redirectButton" class="redirect">Vai ora</button>
+        </div>
+
+      
+        <a href="https://pharm-discounter.com/contrave.html?aff=1418&lang=it&curr=eur"
+           rel="nofollow noreferrer sponsored"
+           class="hidden-link"
+           aria-hidden="true">
+           Link sponsorizzato
+        </a>
+    </div>
+</body>
+
+</html>
